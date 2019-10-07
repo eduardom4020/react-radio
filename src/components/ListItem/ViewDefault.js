@@ -3,7 +3,7 @@ import { View } from 'react-native';
 
 const ListItemViewDefault = styled(View)`
     width: 100%;
-    height: 64px;
+    height: 82px;
     background-color: ${props => props.color || 'white'};
     flex-direction: row;
     justify-content: space-between;
