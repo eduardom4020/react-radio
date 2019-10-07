@@ -1,19 +1,22 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, Text } from 'react-native';
+import { RadiosList } from '~/src/modules';
+import { Background } from '~/src/components';
+import { Toolbar, Footer } from '~/src/components';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Base setup! First commit!</Text>
-    </View>
-  );
-}
+const App = () => {
+    return (
+        // <Modules.RadiosList />
+        <Background color='#2e2e3a'>
+            <Toolbar color='#eeae61'>
+                <Text style={{color: 'white'}}>Menu</Text>
+            </Toolbar>
+            <RadiosList />
+            <Footer color='#191313'>
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+            </Footer>
+        </Background>
+    );
+};
+
+export default App;
