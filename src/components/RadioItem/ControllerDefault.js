@@ -2,7 +2,7 @@ import { useState, useCallback, useEffect } from 'react';
 import { Animated } from 'react-native';
 
 const useController = props => {
-    const { onActive } = props;
+    const { onToggle, id, selectedRadio } = props;
     
     const [ isActive, setActive ] = useState(false);
     // const [ animation, setAnimation ] = useState(new Animated.Value());
@@ -11,12 +11,20 @@ const useController = props => {
         () => {
             setActive(!isActive);
 
-            if(!isActive && onActive) {
-                onActive();
+            if(onToggle) {
+                onToggle(id, !isActive);
             }
         }, 
-        [ isActive, onActive, setActive ]
+        [ isActive, onToggle, setActive ]
     );
+
+    useEffect(
+        () => {
+            if(selectedRadio && selectedRadio.id !== id && isActive) {
+                setActive(false);
+            }
+        }
+    )
 
     // useEffect(
     //     () => {

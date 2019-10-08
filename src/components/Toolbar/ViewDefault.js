@@ -8,6 +8,7 @@ const ToolbarViewDefault = styled(View)`
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    padding: ${( StatusBar.currentHeight || 0 )}px 0 0 0;
 `;
 
 export default ToolbarViewDefault;

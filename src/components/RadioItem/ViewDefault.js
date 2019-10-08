@@ -6,7 +6,7 @@ import useController from './ControllerDefault';
 
 const RadioItemViewDefault = props => {
     const { title='Some Radio', frequency='111,11', ...extraProps } = props;
-    const { isActive, toggle, animation } = useController(props);
+    const { isActive, toggle } = useController(props);
     
     return (
         <TouchableOpacity onPress={toggle}>
