@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Image, TouchableOpacity } from 'react-native';
 import Minus from '~/assets/minus.png';
 import Plus from '~/assets/plus.png';
+import IconButton from '~/src/components/IconButton';
 
 const RadioDetailViewDefault = props => {
     return (
@@ -13,7 +14,7 @@ const RadioDetailViewDefault = props => {
                 alignItems: 'center'
             }}
         >
-            <Image source={Minus} style={{width: 24, height: 24}}/>
+            <IconButton src={Minus} />
             <Image 
                 source={{ uri: 'https://i.pinimg.com/originals/38/85/e5/3885e5a763c9b06e6464ccb7e0cb1e2f.jpg'}} 
                 style={{
@@ -24,7 +25,7 @@ const RadioDetailViewDefault = props => {
                     borderColor: '#a3acbe'
                 }}
             />
-            <Image source={Plus} style={{width: 24, height: 24}}/>
+            <IconButton src={Plus} />
         </View>
     );
 };
