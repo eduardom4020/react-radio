@@ -16,7 +16,13 @@ const RadioDetailViewDefault = props => {
             <Image source={Minus} style={{width: 24, height: 24}}/>
             <Image 
                 source={{ uri: 'https://i.pinimg.com/originals/38/85/e5/3885e5a763c9b06e6464ccb7e0cb1e2f.jpg'}} 
-                style={{width: 192, height: 192, borderRadius: 192 / 2}}
+                style={{
+                    width: 192, 
+                    height: 192, 
+                    borderRadius: 192 / 2,
+                    borderWidth: 2,
+                    borderColor: '#a3acbe'
+                }}
             />
             <Image source={Plus} style={{width: 24, height: 24}}/>
         </View>
