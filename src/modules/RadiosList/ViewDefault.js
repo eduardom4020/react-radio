@@ -14,7 +14,7 @@ const DATA = {
 };
 
 const RadioListViewDefault = props => {
-    const { radio, selectRadio, clearSelection } = useController({...props, radios: DATA});
+    const { radio, selectRadio, clearSelection, ref } = useController({...props, radios: DATA});
 
     return (
         <>
@@ -23,7 +23,8 @@ const RadioListViewDefault = props => {
                 <Text style={{color: 'white', fontSize: 24, fontWeight: 'bold'}}>STATIONS</Text>
                 <IconButton src={Switch} />
             </Toolbar>
-            <FlatList 
+            <FlatList
+                ref={ref}
                 style={{
                     padding: 24,
                     paddingLeft: 24,
