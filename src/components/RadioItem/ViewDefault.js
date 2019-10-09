@@ -1,20 +1,23 @@
 import React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity, Animated, Easing } from 'react-native';
 import ListItem from '~/src/components/ListItem';
 import RadioDetail from '~/src/components/RadioDetail';
-import useController from './ControllerDefault'; 
+import useController from './ControllerDefault';
+import useAnimationController from './ControllerAnimation';
 
 const RadioItemViewDefault = props => {
-    const { title='Some Radio', frequency='111,11', ...extraProps } = props;
+    const { title='Some Radio', frequency='111,11', tag, ...extraProps } = props;
     const { isActive, toggle } = useController(props);
+    const { linearGrow } = useAnimationController({ shouldExpand: isActive });
     
+    const height = linearGrow(0, 216);
+
     return (
         <>
             {
-                isActive &&
-                    <View style={{width: '100%', marginTop: 36}} >
-                        <RadioDetail />
-                    </View>
+                <Animated.View style={{width: '100%', height}} >
+                    <RadioDetail imageTag={tag} onTouchImage={toggle}/>
+                </Animated.View>
             }
             <TouchableOpacity onPress={toggle}>
                 <ListItem color='transparent' {...extraProps} >

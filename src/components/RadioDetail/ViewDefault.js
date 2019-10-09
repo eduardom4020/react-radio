@@ -1,30 +1,39 @@
 import React from 'react';
-import { View, Image, TouchableOpacity } from 'react-native';
+import { View, Image, TouchableWithoutFeedback } from 'react-native';
 import Minus from '~/assets/minus.png';
 import Plus from '~/assets/plus.png';
+import * as Images from '~/assets';
 import IconButton from '~/src/components/IconButton';
 
 const RadioDetailViewDefault = props => {
+    const { imageTag='', style={}, onTouchImage } = props;
+
     return (
         <View
             style={{
                 width: '100%',
+                height: '100%',
                 flexDirection: 'row',
                 justifyContent: 'space-around',
-                alignItems: 'center'
+                alignItems: 'center',
+                overflow: 'hidden',
+                ...style
             }}
         >
             <IconButton src={Minus} />
-            <Image 
-                source={{ uri: 'https://i.pinimg.com/originals/38/85/e5/3885e5a763c9b06e6464ccb7e0cb1e2f.jpg'}} 
-                style={{
-                    width: 192, 
-                    height: 192, 
-                    borderRadius: 192 / 2,
-                    borderWidth: 2,
-                    borderColor: '#a3acbe'
-                }}
-            />
+            <TouchableWithoutFeedback onPress={onTouchImage}>
+                <Image 
+                    source={Images[imageTag]} 
+                    style={{
+                        width: 192, 
+                        height: '100%',
+                        maxHeight: 192,
+                        borderRadius: 192 / 2,
+                        borderWidth: 2,
+                        borderColor: '#a3acbe'
+                    }}
+                />
+            </TouchableWithoutFeedback>
             <IconButton src={Plus} />
         </View>
     );

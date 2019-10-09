@@ -6,11 +6,11 @@ import Back from '~/assets/back-arrow.png';
 import Switch from '~/assets/switch.png';
 
 const DATA = {
-    ['1']: { id: '1', title: 'Putin FM', frequency: '66,6' },
-    ['2']: { id: '2', title: 'Dribbble FM', frequency: '101,2' },
-    ['3']: { id: '3', title: 'Doge FM', frequency: '99,4' },
-    ['4']: { id: '4', title: 'Ballads FM', frequency: '87,1' },
-    ['5']: { id: '5', title: 'Maximum FM', frequency: '142,2' }
+    ['1']: { id: '1', title: 'Putin FM', frequency: '66,6', tag: 'radioPutinLogo' },
+    ['2']: { id: '2', title: 'Dribbble FM', frequency: '101,2', tag: 'radioDribbbledLogo' },
+    ['3']: { id: '3', title: 'Doge FM', frequency: '99,4', tag: 'radioDogeLogo' },
+    ['4']: { id: '4', title: 'Ballads FM', frequency: '87,1', tag: 'radioBalladsLogo' },
+    ['5']: { id: '5', title: 'Maximum FM', frequency: '142,2', tag: 'radioMaximumLogo' }
 };
 
 const RadioListViewDefault = props => {
@@ -28,7 +28,7 @@ const RadioListViewDefault = props => {
                     padding: 24,
                     paddingLeft: 24,
                     paddingRight: 24,
-                    paddingBottom: 24,
+                    paddingBottom: 36,
                     width: '100%'
                 }}
                 data={Object.values(DATA)}
