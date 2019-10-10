@@ -1,9 +1,18 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, Animated, Easing } from 'react-native';
+import styled from 'styled-components';
+import { Text, TouchableOpacity, Animated } from 'react-native';
 import ListItem from '~/src/components/ListItem';
 import RadioDetail from '~/src/components/RadioDetail';
 import useController from './ControllerDefault';
 import useAnimationController from './ControllerAnimation';
+import { MEDIUM_GREY } from '~/src/constants/colors';
+
+const StyledText = styled(Text)`
+    color: ${props => props.color || MEDIUM_GREY};
+    font-size: 24px;
+    text-align: ${props => props.toRight ? 'right' : 'left'};
+    fontWeight: ${props => props.bold ? 'bold' : 'normal'};
+`;
 
 const RadioItemViewDefault = props => {
     const { title='Some Radio', frequency='111,11', tag, ...extraProps } = props;
@@ -21,8 +30,8 @@ const RadioItemViewDefault = props => {
             }
             <TouchableOpacity onPress={toggle}>
                 <ListItem color='transparent' {...extraProps} >
-                    <Text style={{color: '#a3acbe', fontSize: 24, textAlign: 'left'}}>{title}</Text>
-                    <Text style={{color: '#a3acbe', fontWeight: 'bold', fontSize: 24, textAlign: 'right'}}>{frequency}</Text>
+                    <StyledText>{title}</StyledText>
+                    <StyledText toRight bold>{frequency}</StyledText>
                 </ListItem>
             </TouchableOpacity>
         </>

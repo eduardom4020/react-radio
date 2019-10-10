@@ -1,0 +1,3 @@
+export const DEFAULT_IMAGE_BT_SIZE = 192;
+export const DEFAULT_ICON_BT_SIZE = 24;
+export const DEFAULT_RADIO_PLAYING = 'CURRENTLY PLAYING'

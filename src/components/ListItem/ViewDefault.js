@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { View } from 'react-native';
+import { MEDIUM_GREY } from '~/src/constants/colors';
 
 const ListItemViewDefault = styled(View)`
     width: 100%;
@@ -11,7 +12,7 @@ const ListItemViewDefault = styled(View)`
     flex-wrap: wrap;
     border-style: solid;
     border-bottom-width: ${props => props.borderVisible === false ? 0 : 1}px;
-    border-bottom-color: #a3acbe;
+    border-bottom-color: ${props => props.borderColor || MEDIUM_GREY};
 `;
 
 export default ListItemViewDefault;

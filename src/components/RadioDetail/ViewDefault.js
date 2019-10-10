@@ -1,41 +1,29 @@
 import React from 'react';
-import { View, Image, TouchableWithoutFeedback } from 'react-native';
-import Minus from '~/assets/minus.png';
-import Plus from '~/assets/plus.png';
-import * as Images from '~/assets';
+import styled from 'styled-components';
+import { View } from 'react-native';
+import { iconMinus, iconPlus } from '~/assets';
+import { MEDIUM_GREY } from '~/src/constants/colors';
 import IconButton from '~/src/components/IconButton';
+import ImageButton from '~/src/components/ImageButton';
+
+const StyledView = styled(View)`
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+`;
 
 const RadioDetailViewDefault = props => {
-    const { imageTag='', style={}, onTouchImage } = props;
+    const { imageTag='', onTouchImage, style } = props;
 
     return (
-        <View
-            style={{
-                width: '100%',
-                height: '100%',
-                flexDirection: 'row',
-                justifyContent: 'space-around',
-                alignItems: 'center',
-                overflow: 'hidden',
-                ...style
-            }}
-        >
-            <IconButton src={Minus} />
-            <TouchableWithoutFeedback onPress={onTouchImage}>
-                <Image 
-                    source={Images[imageTag]} 
-                    style={{
-                        width: 192, 
-                        height: '100%',
-                        maxHeight: 192,
-                        borderRadius: 192 / 2,
-                        borderWidth: 2,
-                        borderColor: '#a3acbe'
-                    }}
-                />
-            </TouchableWithoutFeedback>
-            <IconButton src={Plus} />
-        </View>
+        <StyledView style={style} >
+            <IconButton src={iconMinus} size={32} tintColor={MEDIUM_GREY}/>
+            <ImageButton onPress={onTouchImage} tag={imageTag} />
+            <IconButton src={iconPlus} size={32} tintColor={MEDIUM_GREY}/>
+        </StyledView>
     );
 };
 

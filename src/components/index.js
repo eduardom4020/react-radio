@@ -6,4 +6,5 @@ export { default as RadioItem } from './RadioItem';
 export { default as RadioDetail } from './RadioDetail';
 export { default as RadioFooter } from './RadioFooter';
 export { default as IconButton } from './IconButton';
+export { default as ImageButton } from './ImageButton';
 export { default as RadioToolbar } from './RadioToolbar';

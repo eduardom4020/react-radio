@@ -4,7 +4,7 @@ import { View, StatusBar } from 'react-native';
 const ToolbarViewDefault = styled(View)`
     width: 100%;
     height: ${props => props.height || StatusBar.currentHeight * 4 || 0}px;
-    background-color: ${props => props.color || 'aliceblue'};
+    background-color: ${props => props.color || 'yellow'};
     flex-direction: row;
     justify-content: space-around;
     align-items: center;

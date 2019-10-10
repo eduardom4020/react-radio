@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { View, StatusBar } from 'react-native';
+import { MEDIUM_GREY } from '~/src/constants/colors';
 
 const FooterViewDefault = styled(View)`
     width: 100%;
@@ -9,7 +10,7 @@ const FooterViewDefault = styled(View)`
     align-items: center;
     border-style: solid;
     border-top-width: 1px;
-    border-top-color: #a3acbe;
+    border-top-color: ${props => props.borderColor || MEDIUM_GREY};
 `;
 
 export default FooterViewDefault;
