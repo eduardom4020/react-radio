@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { View, StatusBar } from 'react-native';
+import { View } from 'react-native';
 
 const BackgroundViewDefault = styled(View)`
     width: 100%;
@@ -8,7 +8,6 @@ const BackgroundViewDefault = styled(View)`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: ${props => props.statusBarHeight != null ? props.statusBarHeight : ( StatusBar.currentHeight || 0 )}px 0 0 0;
 `;
 
 export default BackgroundViewDefault;

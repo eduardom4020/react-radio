@@ -2,7 +2,7 @@ import React from 'react';
 import { Image, TouchableOpacity } from 'react-native';
 
 const IconButtonViewDefault = props => {
-    const { src } = props;
+    const { src, style={} } = props;
 
     return (
         <TouchableOpacity>
@@ -10,7 +10,8 @@ const IconButtonViewDefault = props => {
                 source={src}
                 style={{
                     width: 24, 
-                    height: 24
+                    height: 24,
+                    ...style
                 }}
             />
         </TouchableOpacity>
