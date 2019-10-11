@@ -1,0 +1,2 @@
+# Modules
+>This section contains all of the application Modules. These are 'high level' components that use base components to mount some complex view with complex behaviours, something next or able to be the direct contact with the application's user.

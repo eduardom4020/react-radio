@@ -1,5 +1,5 @@
-# Footer
->This component is a view renders the application's footer, that is the borded bar on bottom of the screen.
+# Toolbar
+>This component is a view renders the application's toolbar, that is the top bar.
 
 ### Props
 These are the props accepted by the component, pay attention to the description, inputs and behaviour:
@@ -7,11 +7,11 @@ These are the props accepted by the component, pay attention to the description,
 ---
 
 ##### height *(string | number)*
-*The height of the footer. By default it's five times status bar height.*
+*The height of the toolbar. By default it's four times status bar height.*
 
 **example**: 
 ```
-<Footer height={200} /> 
+<Toolbar height={100} /> 
 ```
 
 ---
@@ -22,16 +22,6 @@ These are the props accepted by the component, pay attention to the description,
 **example**: 
 ```
 <Footer color='yellow' />
-```
-
----
-
-##### borderColor *(string)*
-*The border color of the footer. It can be colored the same way of the props above. By default it value is #a3acbe.*
-
-**example**: 
-```
-<Footer borderColor='orange' />
 ```
 
 ---

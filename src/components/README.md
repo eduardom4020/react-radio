@@ -1,0 +1,2 @@
+# Components
+>This section contains all of the application Base Components. These are 'low level' components that should be small, simple and does only theirs specific task. The most important part of a base component is to be always ready to be used in any other project's implementations.
