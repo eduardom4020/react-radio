@@ -3,7 +3,6 @@
 exports[`App (root) Render? 1`] = `
 <Styled(View)
   color="#2e2e3a"
-  statusBarHeight={0}
 >
   <RadioListViewDefault />
 </Styled(View)>

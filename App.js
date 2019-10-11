@@ -5,10 +5,7 @@ import { DARK_GREY } from '~/src/constants/colors';
 
 const App = () => {
     return (
-        <Background 
-            statusBarHeight={0}
-            color={DARK_GREY}
-        >
+        <Background color={DARK_GREY} >
             <RadiosList />
         </Background>
     );

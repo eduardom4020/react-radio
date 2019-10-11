@@ -15,13 +15,13 @@ const StyledImage = styled(Image)`
 `;
 
 const ImageButtonViewDefault = props => {
-    const { onPress, tag, style } = props;
+    const { onPress, tag, ...extraProps } = props;
 
     return (
         <TouchableWithoutFeedback onPress={onPress}>
             <StyledImage 
                 source={Images[tag]} 
-                style={style}
+                {...extraProps}
             />
         </TouchableWithoutFeedback>
     );

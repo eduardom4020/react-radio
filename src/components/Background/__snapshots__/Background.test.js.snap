@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Background Render with children? 1`] = `
+<StyledComponent
+  color="#2e2e3a"
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bdVaJa",
+        "isStatic": false,
+        "rules": Array [
+          "
+    width: 100%;
+    height: 100%;
+    background-color: ",
+          [Function],
+          ";
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+",
+        ],
+      },
+      "displayName": "Styled(View)",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-bdVaJa",
+      "target": [Function],
+      "toString": [Function],
+      "usesTheme": false,
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+>
+  <View>
+    <Text>
+      Test1
+    </Text>
+  </View>
+  <Text>
+    Test2
+  </Text>
+</StyledComponent>
+`;
+
+exports[`Background Render with custom color? 1`] = `
+<StyledComponent
+  color="#2e2e3a"
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bdVaJa",
+        "isStatic": false,
+        "rules": Array [
+          "
+    width: 100%;
+    height: 100%;
+    background-color: ",
+          [Function],
+          ";
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+",
+        ],
+      },
+      "displayName": "Styled(View)",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-bdVaJa",
+      "target": [Function],
+      "toString": [Function],
+      "usesTheme": false,
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+/>
+`;
+
+exports[`Background Render? 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bdVaJa",
+        "isStatic": false,
+        "rules": Array [
+          "
+    width: 100%;
+    height: 100%;
+    background-color: ",
+          [Function],
+          ";
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+",
+        ],
+      },
+      "displayName": "Styled(View)",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-bdVaJa",
+      "target": [Function],
+      "toString": [Function],
+      "usesTheme": false,
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+/>
+`;

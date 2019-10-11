@@ -25,12 +25,13 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "enzyme-to-json": "^3.4.2",
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "jest-styled-components": "^6.3.3"
   },
   "private": true,
   "jest": {
     "preset": "react-native",
-    "collectCoverage": true,
+    "collectCoverage": false,
     "moduleDirectories": [
       "node_modules",
       "src"
@@ -51,6 +52,8 @@
       "/data",
       "/src/constants"
     ],
-    "snapshotSerializers": ["enzyme-to-json/serializer"]
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }

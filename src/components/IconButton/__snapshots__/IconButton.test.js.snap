@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconButton Render with custom size? 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+>
+  <Styled(Image)
+    size={64}
+  />
+</TouchableOpacity>
+`;
+
+exports[`IconButton Render with image from assets? 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+>
+  <Styled(Image)
+    source={
+      Object {
+        "testUri": "../../../assets/switch.png",
+      }
+    }
+  />
+</TouchableOpacity>
+`;
+
+exports[`IconButton Render with invalid image source type? 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+>
+  <Styled(Image)
+    source={Object {}}
+  />
+</TouchableOpacity>
+`;
+
+exports[`IconButton Render with invalid image source type? 2`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+>
+  <Styled(Image)
+    source={true}
+  />
+</TouchableOpacity>
+`;
+
+exports[`IconButton Render with invalid image source type? 3`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+>
+  <Styled(Image)
+    source={1}
+  />
+</TouchableOpacity>
+`;
+
+exports[`IconButton Render with invalid image source type? 4`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+>
+  <Styled(Image)
+    source="image"
+  />
+</TouchableOpacity>
+`;
+
+exports[`IconButton Render? 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+>
+  <Styled(Image) />
+</TouchableOpacity>
+`;

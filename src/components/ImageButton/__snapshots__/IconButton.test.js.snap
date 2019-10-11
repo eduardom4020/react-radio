@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageButton Render with custom size? 1`] = `
+<TouchableWithoutFeedback>
+  <Styled(Image)
+    size={64}
+  />
+</TouchableWithoutFeedback>
+`;
+
+exports[`ImageButton Render with invalid tag? 1`] = `
+<TouchableWithoutFeedback>
+  <Styled(Image) />
+</TouchableWithoutFeedback>
+`;
+
+exports[`ImageButton Render with invalid tag? 2`] = `
+<TouchableWithoutFeedback>
+  <Styled(Image) />
+</TouchableWithoutFeedback>
+`;
+
+exports[`ImageButton Render with invalid tag? 3`] = `
+<TouchableWithoutFeedback>
+  <Styled(Image) />
+</TouchableWithoutFeedback>
+`;
+
+exports[`ImageButton Render with invalid tag? 4`] = `
+<TouchableWithoutFeedback>
+  <Styled(Image) />
+</TouchableWithoutFeedback>
+`;
+
+exports[`ImageButton Render with valid tag? 1`] = `
+<TouchableWithoutFeedback>
+  <Styled(Image)
+    source={
+      Object {
+        "testUri": "../../../assets/doge.jpg",
+      }
+    }
+  />
+</TouchableWithoutFeedback>
+`;
+
+exports[`ImageButton Render? 1`] = `
+<TouchableWithoutFeedback>
+  <Styled(Image) />
+</TouchableWithoutFeedback>
+`;
