@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadiosList Render? 1`] = `
+<Fragment>
+  <RadioToolbarViewDefault
+    color="#eeae61"
+    title="STATIONS"
+  />
+  <Styled(FlatList)
+    data={
+      Array [
+        Object {
+          "frequency": "66,6",
+          "id": "1",
+          "tag": "radioPutinLogo",
+          "title": "Putin FM",
+        },
+        Object {
+          "frequency": "101,2",
+          "id": "2",
+          "tag": "radioDribbbledLogo",
+          "title": "Dribbble FM",
+        },
+        Object {
+          "frequency": "99,4",
+          "id": "3",
+          "tag": "radioDogeLogo",
+          "title": "Doge FM",
+        },
+        Object {
+          "frequency": "87,1",
+          "id": "4",
+          "tag": "radioBalladsLogo",
+          "title": "Ballads FM",
+        },
+        Object {
+          "frequency": "142,2",
+          "id": "5",
+          "tag": "radioMaximumLogo",
+          "title": "Maximum FM",
+        },
+      ]
+    }
+    keyExtractor={[Function]}
+    renderItem={[Function]}
+  />
+  <RadioFooterViewDefault
+    color="#191313"
+    radioTitle={null}
+  />
+</Fragment>
+`;

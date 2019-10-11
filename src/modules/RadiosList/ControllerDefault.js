@@ -5,9 +5,21 @@ const EXPANDED_ITEM_HEIGHT = 216;
 
 const useController = props => {
     const { radios } = props;
-    
+
     const [ radio, setRadio ] = useState(null);
     const [ position, setPosition ] = useState(null);
+    const ref = useRef();
+    
+    // TEST: test if radios props is valid, if not reject it:
+    if(typeof(radios) !== 'object' || ( typeof(radios) === 'object' && radios.constructor !== Object )) {
+        return {
+            dataValues: [],
+            selectRadio: ()=>null,
+            clearSelection: ()=>null,
+            radio: {},
+            ref
+        };
+    }
 
     const selectRadio = useCallback(
         (id) => {
@@ -29,8 +41,6 @@ const useController = props => {
         [ setRadio ]
     );
 
-    const ref = useRef();
-
     useEffect(
         () => {
             if(ref && ref.current && position != null) {
@@ -42,6 +52,7 @@ const useController = props => {
     );
 
     return {
+        dataValues: Object.values(radios),
         selectRadio,
         clearSelection,
         radio,

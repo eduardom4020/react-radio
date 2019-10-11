@@ -13,8 +13,10 @@ const StyledList = styled(FlatList)`
 `;
 
 const RadioListViewDefault = props => {
-    const { radio, selectRadio, clearSelection, ref } = useController({...props, radios: DATA});
-    const dataValues = Object.values(DATA);
+    const { radios: Radios, ...extraProps } = props;
+    const radios = Radios || DATA;
+
+    const { dataValues, radio, selectRadio, clearSelection, ref } = useController({...extraProps, radios});
 
     return (
         <>

@@ -6,7 +6,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "test": "jest"
+    "test": "jest -u --verbose"
   },
   "dependencies": {
     "expo": "^35.0.0",
@@ -24,6 +24,7 @@
     "babel-preset-expo": "^7.0.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
+    "enzyme-to-json": "^3.4.2",
     "jest": "^24.9.0"
   },
   "private": true,
@@ -49,6 +50,7 @@
       "/assets",
       "/data",
       "/src/constants"
-    ]
+    ],
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
   }
 }
