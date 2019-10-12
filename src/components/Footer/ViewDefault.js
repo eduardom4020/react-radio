@@ -4,7 +4,7 @@ import { MEDIUM_GREY } from '~/src/constants/colors';
 
 const FooterViewDefault = styled(View)`
     width: 100%;
-    height: ${props => props.height || StatusBar.currentHeight * 5 || 0}px;
+    height: ${props => props.height == null ? '20%' : typeof(props.height) === 'number' ? `${props.height}px` : props.height };
     background-color: ${props => props.color || 'grey'};
     justify-content: center;
     align-items: center;

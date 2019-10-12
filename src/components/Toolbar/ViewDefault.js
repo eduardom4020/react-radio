@@ -3,7 +3,7 @@ import { View, StatusBar } from 'react-native';
 
 const ToolbarViewDefault = styled(View)`
     width: 100%;
-    height: ${props => props.height || StatusBar.currentHeight * 4 || 0}px;
+    height: ${props => props.height == null ? '15%' : typeof(props.height) === 'number' ? `${props.height}px` : props.height };
     background-color: ${props => props.color || 'grey'};
     flex-direction: row;
     justify-content: space-around;
