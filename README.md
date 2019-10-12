@@ -34,25 +34,54 @@ Following this archtecture is easier to reduce the scope of correcting some bug,
 
 Also, any React component should be made in this structure, and should reuse each other to make more complex components. In this project there are two components folders in **src** folder, they are **components** and **modules**. The first one carry all of *base components*, and the second carry the screens that should be displayed to end user, that way, a *module component* should use the *base* ones in order to make more complex screens with a clean and simple code.
 
+----
+
 ### Running
 
-*To run this project it's necessary to install expo app on cellphone, then do the next steps. Open a terminal in the root level of this project and run:*
+To test the application there are three ways:
+
+#### Via Apetize's Emulator
+
+* [Android](https://appetize.io/embed/xc1w6f1krd589zhp22a0mgftyw?autoplay=true&debug=false&device=nexus5&deviceColor=black&embed=true&launchUrl=exp:%2F%2Fexpo.io%2F@snack%2FByhIGDytB%2Bdd13k18iu&orientation=portrait&screenOnly=false&xDocMsg=true&xdocMsg=true&params=%7B%22EXKernelLaunchUrlDefaultsKey%22:%22exp:%2F%2Fexpo.io%2F@snack%2FByhIGDytB%2Bdd13k18iu%22,%22EXKernelDisableNuxDefaultsKey%22:true%7D&scale=75&osVersion=8.1)
+* [iOS](https://appetize.io/embed/8bnmakzrptf1hv9dq7v7bnteem?autoplay=true&debug=false&device=iphone6s&deviceColor=black&embed=true&orientation=portrait&screenOnly=false&xDocMsg=true&xdocMsg=true&params=%7B%22EXKernelLaunchUrlDefaultsKey%22:%22exp:%2F%2Fexpo.io%2F@snack%2FByhIGDytB%2Bdd13k18iu%22,%22EXKernelDisableNuxDefaultsKey%22:true%7D&scale=75&osVersion=11.4)
+
+*The project was imported in [expo snack](https://snack.expo.io/ByhIGDytB) and adjusted to run with it.*
+
+>**ATTENTION**: For the next spets you need to install [Expo app](https://expo.io/tools#client) in your cellphone.
+
+#### Via Expo's Published Project
+
+*In your cellphone access the app using the following url*:
+
+[https://expo.io/@eduardom4020/native-app](https://expo.io/@eduardom4020/native-app)
+
+#### Via npm Package Manager
+
+*In you PC, open a terminal in the root level of this project and run:*
 
 ```
 npm install
 ```
 
+*Then*
+
 ```
 npm start
 ```
 
+*Then a expo application will open in your browser. When it runs it will shows to you an QR code, you need to switch to tunnel option then access expo app on your cellphone and search for scan qr code option.* **ATTENTION**: For some iPhones you should scan the Qr code using the default scanner of the OS, then it will ask you if you wish to run with expo.*
+
+#### Tests
+
+*If you wish you can run the test suite by calling in the project's root*:
+
+```
+npm run test
+```
+
+**ATTENTION**: If you want to enable the code coverage analysis, you should got to package.json and change the value of the variable in line 35 (*"collectCoverage": false*) to true. Then run the tests again.
+
 ----
-
-### Architecture and Code Style
-
-Currently I am using my own application archtecture that allows me to split view and logics. The idea is that each component will have a DefaultView and DefaultController. I also used a global importer of babel in order to make reuse easily.
-
-*This project has two major sections: components and modules, wich are respectively low level like implementations and high level implementations, that uses components to make more complexes combinations, turning the project more product like.*
 
 ### Components
 
@@ -62,17 +91,30 @@ Bellow you have the list of Components and Modules of this application.
 
 *Located in components folder*
 
-* Background
-* Footer
-* RadioFooter
-* IconButton
-* ImageButton
-* ListItem
-* RadioDetails
-* RadioItem
-* Toolbar
-* RadioToolbar
+* [Background](./src/components/Background)
+* [Footer](./src/components/Footer)
+* [RadioFooter](./src/components/RadioFooter)
+* [IconButton](./src/components/IconButton)
+* [ImageButton](./src/components/ImageButton)
+* [ListItem](./src/components/ListItem)
+* [RadioDetail](./src/components/RadioDetail)
+* [RadioItem](./src/components/RadioItem)
+* [Toolbar](./src/components/Toolbar)
+* [RadioToolbar](./src/components/RadioToolbar)
 
 #### Modules
 
-* RadiosList
+* [RadiosList](./src/modules/RadiosList)
+
+----
+
+### About
+
+*This project was made by*,
+
+Eduardo Melo de Carvalho Braga
+
+**Contact**:
+
+* Email: [eduardom4020@gmail.com](mailto:eduardom4020@gmail.com)
+* LinkedIn: [https://www.linkedin.com/in/eduardo-melo-braga/](https://www.linkedin.com/in/eduardo-melo-braga/)
