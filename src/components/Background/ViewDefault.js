@@ -1,13 +1,7 @@
 import styled from 'styled-components';
 import { View } from 'react-native';
+import { BackgroundStyle } from './shared';
 
-const BackgroundViewDefault = styled(View)`
-    width: 100%;
-    height: 100%;
-    background-color: ${props => props.color || 'white'};
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-`;
+const BackgroundViewDefault = styled(View)(BackgroundStyle);
 
 export default BackgroundViewDefault;
