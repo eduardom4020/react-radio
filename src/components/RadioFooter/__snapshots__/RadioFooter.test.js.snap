@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioFooter Render with component title? 1`] = `
+<Styled(View)
+  radioTitle={
+    <View>
+      <Text>
+        Doge FM
+      </Text>
+    </View>
+  }
+>
+  <Styled(Text)>
+    CURRENTLY PLAYING
+  </Styled(Text)>
+  <Styled(Text)>
+    <View>
+      <Text>
+        Doge FM
+      </Text>
+    </View>
+  </Styled(Text)>
+</Styled(View)>
+`;
+
+exports[`RadioFooter Render with custom color? 1`] = `
+<Styled(View)
+  color="#2e2e3a"
+/>
+`;
+
+exports[`RadioFooter Render with custom height? 1`] = `
+<Styled(View)
+  height={200}
+/>
+`;
+
+exports[`RadioFooter Render with string title? 1`] = `
+<Styled(View)
+  radioTitle="Doge FM"
+>
+  <Styled(Text)>
+    CURRENTLY PLAYING
+  </Styled(Text)>
+  <Styled(Text)>
+    Doge FM
+  </Styled(Text)>
+</Styled(View)>
+`;
+
+exports[`RadioFooter Render? 1`] = `<Styled(View) />`;

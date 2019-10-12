@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioDetail Render with invalid tag? 1`] = `
+<Styled(View)>
+  <IconButtonViewDefault
+    size={32}
+    src={
+      Object {
+        "testUri": "../../../assets/minus.png",
+      }
+    }
+    tintColor="#a3acbe"
+  />
+  <ImageButtonViewDefault
+    tag={Object {}}
+  />
+  <IconButtonViewDefault
+    size={32}
+    src={
+      Object {
+        "testUri": "../../../assets/plus.png",
+      }
+    }
+    tintColor="#a3acbe"
+  />
+</Styled(View)>
+`;
+
+exports[`RadioDetail Render with invalid tag? 2`] = `
+<Styled(View)>
+  <IconButtonViewDefault
+    size={32}
+    src={
+      Object {
+        "testUri": "../../../assets/minus.png",
+      }
+    }
+    tintColor="#a3acbe"
+  />
+  <ImageButtonViewDefault
+    tag={true}
+  />
+  <IconButtonViewDefault
+    size={32}
+    src={
+      Object {
+        "testUri": "../../../assets/plus.png",
+      }
+    }
+    tintColor="#a3acbe"
+  />
+</Styled(View)>
+`;
+
+exports[`RadioDetail Render with invalid tag? 3`] = `
+<Styled(View)>
+  <IconButtonViewDefault
+    size={32}
+    src={
+      Object {
+        "testUri": "../../../assets/minus.png",
+      }
+    }
+    tintColor="#a3acbe"
+  />
+  <ImageButtonViewDefault
+    tag={1}
+  />
+  <IconButtonViewDefault
+    size={32}
+    src={
+      Object {
+        "testUri": "../../../assets/plus.png",
+      }
+    }
+    tintColor="#a3acbe"
+  />
+</Styled(View)>
+`;
+
+exports[`RadioDetail Render with invalid tag? 4`] = `
+<Styled(View)>
+  <IconButtonViewDefault
+    size={32}
+    src={
+      Object {
+        "testUri": "../../../assets/minus.png",
+      }
+    }
+    tintColor="#a3acbe"
+  />
+  <ImageButtonViewDefault
+    tag="image"
+  />
+  <IconButtonViewDefault
+    size={32}
+    src={
+      Object {
+        "testUri": "../../../assets/plus.png",
+      }
+    }
+    tintColor="#a3acbe"
+  />
+</Styled(View)>
+`;
+
+exports[`RadioDetail Render with valid tag? 1`] = `
+<Styled(View)>
+  <IconButtonViewDefault
+    size={32}
+    src={
+      Object {
+        "testUri": "../../../assets/minus.png",
+      }
+    }
+    tintColor="#a3acbe"
+  />
+  <ImageButtonViewDefault
+    tag="radioDogeLogo"
+  />
+  <IconButtonViewDefault
+    size={32}
+    src={
+      Object {
+        "testUri": "../../../assets/plus.png",
+      }
+    }
+    tintColor="#a3acbe"
+  />
+</Styled(View)>
+`;
+
+exports[`RadioDetail Render? 1`] = `
+<Styled(View)>
+  <IconButtonViewDefault
+    size={32}
+    src={
+      Object {
+        "testUri": "../../../assets/minus.png",
+      }
+    }
+    tintColor="#a3acbe"
+  />
+  <ImageButtonViewDefault
+    tag=""
+  />
+  <IconButtonViewDefault
+    size={32}
+    src={
+      Object {
+        "testUri": "../../../assets/plus.png",
+      }
+    }
+    tintColor="#a3acbe"
+  />
+</Styled(View)>
+`;

@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioToolbar Render with component title? 1`] = `
+<Styled(View)
+  radioTitle={
+    <View>
+      <Text>
+        Radios Toolbar
+      </Text>
+    </View>
+  }
+>
+  <IconButtonViewDefault
+    src={
+      Object {
+        "testUri": "../../../assets/back-arrow.png",
+      }
+    }
+  />
+  <Styled(Text) />
+  <IconButtonViewDefault
+    src={
+      Object {
+        "testUri": "../../../assets/switch.png",
+      }
+    }
+  />
+</Styled(View)>
+`;
+
+exports[`RadioToolbar Render with custom color? 1`] = `
+<Styled(View)
+  color="#2e2e3a"
+>
+  <IconButtonViewDefault
+    src={
+      Object {
+        "testUri": "../../../assets/back-arrow.png",
+      }
+    }
+  />
+  <Styled(Text) />
+  <IconButtonViewDefault
+    src={
+      Object {
+        "testUri": "../../../assets/switch.png",
+      }
+    }
+  />
+</Styled(View)>
+`;
+
+exports[`RadioToolbar Render with custom height? 1`] = `
+<Styled(View)
+  height={200}
+>
+  <IconButtonViewDefault
+    src={
+      Object {
+        "testUri": "../../../assets/back-arrow.png",
+      }
+    }
+  />
+  <Styled(Text) />
+  <IconButtonViewDefault
+    src={
+      Object {
+        "testUri": "../../../assets/switch.png",
+      }
+    }
+  />
+</Styled(View)>
+`;
+
+exports[`RadioToolbar Render with string title? 1`] = `
+<Styled(View)>
+  <IconButtonViewDefault
+    src={
+      Object {
+        "testUri": "../../../assets/back-arrow.png",
+      }
+    }
+  />
+  <Styled(Text)>
+    Radios App
+  </Styled(Text)>
+  <IconButtonViewDefault
+    src={
+      Object {
+        "testUri": "../../../assets/switch.png",
+      }
+    }
+  />
+</Styled(View)>
+`;
+
+exports[`RadioToolbar Render? 1`] = `
+<Styled(View)>
+  <IconButtonViewDefault
+    src={
+      Object {
+        "testUri": "../../../assets/back-arrow.png",
+      }
+    }
+  />
+  <Styled(Text) />
+  <IconButtonViewDefault
+    src={
+      Object {
+        "testUri": "../../../assets/switch.png",
+      }
+    }
+  />
+</Styled(View)>
+`;

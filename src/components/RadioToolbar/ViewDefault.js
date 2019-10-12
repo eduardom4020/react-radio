@@ -12,10 +12,10 @@ const StyledText = styled(Text)`
 `;
 
 const RadioToolbarViewDefault = props => {
-    const { iconStyle, textStyle, color, title } = props;
+    const { iconStyle, textStyle, title, ...extraProps } = props;
 
     return (
-        <Toolbar color={color}>
+        <Toolbar {...extraProps} >
             <IconButton src={iconBack} style={iconStyle} />
             <StyledText style={textStyle}>{title}</StyledText>
             <IconButton src={iconSwitch} style={iconStyle} />
