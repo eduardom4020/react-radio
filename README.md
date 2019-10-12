@@ -2,9 +2,37 @@
 
 ----
 
-This is an radio app mockup, made in React Native. It main propourse is to select some radio and get the feedback on screen by seeing that the selected radio's name is in the application's footer. Most part of interactions received an expecial cate to bring to the user some good UX.
+This is an radio app mockup, made in React Native. It main propourse is to select some radio and get the feedback on screen by seeing that the selected radio's name is in the application's footer. Although it is simple, the project was executed paying attention to quality and reuse.
 
 ----
+
+### About Project's Architecture
+
+In order to grant to developers working in this project the ability to reuse components, preventing code duplication and reimplementation of already existing solutions, this project encapsules every component in a folder that contains the following structure:
+
+    ComponentName
+    |
+    +---- index
+    |
+    +---- DefaultController
+    |
+    +---- DefaultView
+    |
+    +---- ComponentName.test
+    |
+    .
+    . 
+    .
+
+So everythng necessary to this component works well should be inside it folder. If the component uses external resources, it should have a way to render without this resource or receiving props to replace it.
+
+In this architecture, just like in MVC pattern there is a slipt between View and Controller. The difference is that the concept of Model is being abstracted here, making Controller takes responsibility of data acquisition, manipulation, reliability and more. So, **controllers** carry all of component's complex logics, like calculus, state change, data fetch and more. Per other side, **views** are responsible for render what the Component looks like.
+
+It's possible to have multiples controllers and views. A view can use more than one controller, and it's a good practice to do this when you have away different behaviours to put in just one controller, that would turn it in a bunch of unorganized functions, also, if a simplier view needs only a small part of behaviours, it would get all of the others if all of them would be in just one controller. Also, if the component have to render a different view due to any circunstances, it's possible to create another view and export it in **index**. It should export the default view for the component, but can carry any other simple *module export*. To import alternative views, the import statement would like something like this **import { View2 } from 'path/Component';**.
+
+Following this archtecture is easier to reduce the scope of correcting some bug, if needed the you can crop the component and put in any other place, and the component will still work. **ATTENTION**: To make this behaviour works exactly that way, it's needed to use *absolute imports* if the component reuses any other file of this project.
+
+Also, any React component should be made in this structure, and should reuse each other to make more complex components. In this project there are two components folders in **src** folder, they are **components** and **modules**. The first one carry all of *base components*, and the second carry the screens that should be displayed to end user, that way, a *module component* should use the *base* ones in order to make more complex screens with a clean and simple code.
 
 ### Running
 
