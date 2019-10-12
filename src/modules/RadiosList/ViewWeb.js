@@ -7,9 +7,11 @@ import { APP_TITLE } from '~/src/constants/texts';
 import useController from './ControllerDefault';
 import DATA from '~/src/data/radios-data.json';
 
-const StyledList = styled(FlatList)`
-    padding: 24px 24px 32px 24px;
+const StyledList = styled.div`
+    padding: 24px 24px 32px 6px;
     width: 100%;
+    height: 55%;
+    overflow-x: auto;
 `;
 
 const RadioListViewDefault = props => {
@@ -26,23 +28,26 @@ const RadioListViewDefault = props => {
             />
             <StyledList
                 ref={ref}
-                data={dataValues}
-                renderItem={({ item, index }) => (
-                    <RadioItem 
-                        {...item} 
-                        selectedRadio={radio}
-                        onToggle={(id, isActive) => {
-                            if(radio && !isActive && radio.id === id) {
-                                clearSelection();
-                            } else {
-                                selectRadio(id);
-                            }
-                        }}
-                        borderVisible={Object.keys(DATA).length - 1 !== index}
-                    />
-                )}
-                keyExtractor={item => item.id}
-            />
+            >
+                {
+                    dataValues.map((item, index, array) => (
+                        <RadioItem 
+                            id={item.id}
+                            key={item.id}
+                            {...item} 
+                            selectedRadio={radio}
+                            onToggle={(id, isActive) => {
+                                if(radio && !isActive && radio.id === id) {
+                                    clearSelection();
+                                } else {
+                                    selectRadio(id);
+                                }
+                            }}
+                            borderVisible={array.length - 1 !== index}
+                        />
+                    ))
+                }
+            </StyledList>
             <RadioFooter 
                 color={METALIC_BLACK}
                 radioTitle={radio && radio.title}

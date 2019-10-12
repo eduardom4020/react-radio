@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { View } from 'react-native';
-import { iconMinus, iconPlus } from '~/assets';
+import { iconMinus, iconPlus } from '~/src/assets';
 import { MEDIUM_GREY } from '~/src/constants/colors';
 import IconButton from '~/src/components/IconButton';
 import ImageButton from '~/src/components/ImageButton';

@@ -4,7 +4,7 @@ const ITEM_HEIGHT = 82;
 const EXPANDED_ITEM_HEIGHT = 216;
 
 const useController = props => {
-    const { radios } = props;
+    const { radios, web } = props;
 
     const [ radio, setRadio ] = useState(null);
     const [ position, setPosition ] = useState(null);
@@ -43,7 +43,7 @@ const useController = props => {
 
     useEffect(
         () => {
-            if(ref && ref.current && position != null) {
+            if(ref && ref.current && position != null && ref.current.scrollToOffset) {
                 const top = position * ITEM_HEIGHT;
                 ref.current.scrollToOffset({ animated: true, offset: top > 0 ? top : 0 });
             }

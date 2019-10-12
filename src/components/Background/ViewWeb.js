@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
-import { DARK_GREY, BLACK_LIKE } from '~/src/constants/colors';
+import { MEDIUM_GREY, BLACK_LIKE } from '~/src/constants/colors';
 import { BackgroundStyle } from './shared';
 
 const Body = createGlobalStyle`
@@ -18,10 +18,11 @@ const Body = createGlobalStyle`
 
 const StyledWrapper = styled.div`${BackgroundStyle}`;
 const BackgroundWrapper = styled(StyledWrapper)`
-    width: 35vw;
-    height: 80vh;
-    border: 1px solid white;
-    border-radius: 64px;
+    width: 28vw;
+    height: 82vh;
+    border-radius: 24px;
+    box-shadow: 0 16px 12px 4px #00000040;
+    overflow: hidden;
 `;
 
 const BackgroundWebView = props => {

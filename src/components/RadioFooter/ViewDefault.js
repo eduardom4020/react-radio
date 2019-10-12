@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { Text } from 'react-native';
 import Footer from '~/src/components/Footer';
-import { MEDIUM_GREY, MEDIUM_ORANGE } from '~/src/constants/colors';
 import { DEFAULT_RADIO_PLAYING } from '~/src/constants/values';
+import { MEDIUM_GREY, MEDIUM_ORANGE } from '~/src/constants/colors';
 
 const Header = styled(Text)`
     color: ${props => props.color || MEDIUM_ORANGE};

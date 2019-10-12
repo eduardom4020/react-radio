@@ -1,14 +1,14 @@
 import styled from 'styled-components';
-import { View, StatusBar } from 'react-native';
+import { View } from 'react-native';
+import { MEDIUM_GREY } from '~/src/constants/colors';
 
 const ToolbarViewDefault = styled(View)`
     width: 100%;
-    height: ${props => props.height || StatusBar.currentHeight * 4 || 0}px;
-    background-color: ${props => props.color || 'grey'};
+    height: ${props => props.height == null ? '15%' : typeof(props.height) === 'number' ? `${props.height}px` : props.height };
+    background-color: ${props => props.color || MEDIUM_GREY};
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: ${( StatusBar.currentHeight || 0 )}px 0 0 0;
 `;
 
 export default ToolbarViewDefault;

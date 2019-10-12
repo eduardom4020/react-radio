@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Image, TouchableWithoutFeedback } from 'react-native';
 import { MEDIUM_GREY } from '~/src/constants/colors';
 import { DEFAULT_IMAGE_BT_SIZE } from '~/src/constants/values';
-import * as Images from '~/assets';
+import * as Images from '~/src/assets';
 
 const StyledImage = styled(Image)`
     width: ${props => props.size || DEFAULT_IMAGE_BT_SIZE}px;

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { iconBack, iconSwitch } from '~/assets';
+import { iconBack, iconSwitch } from '~/src/assets';
 import { Text } from 'react-native';
 import Toolbar from '~/src/components/Toolbar';
 import IconButton from '~/src/components/IconButton';

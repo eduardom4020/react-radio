@@ -7,7 +7,8 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "test": "jest -u --verbose",
-    "start-web": "react-app-rewired start"
+    "start-web": "react-app-rewired start",
+    "publish": "expo publish"
   },
   "dependencies": {
     "expo": "^35.0.0",
