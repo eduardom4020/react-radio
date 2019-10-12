@@ -2,7 +2,7 @@
 
 ----
 
-This is an radio app mockup, made in React Native. It main propourse is to select some radio and get the feedback on screen by seeing that the selected radio's name is in the application's footer. Although it is simple, the project was executed paying attention to quality and reuse.
+This is an radio app mockup, made initialy in React Native. It main propourse is to select some radio and get the feedback on screen by seeing that the selected radio's name is in the application's footer. Although it is simple, the project was executed paying attention to quality and reuse.
 
 ----
 
@@ -38,6 +38,8 @@ Also, any React component should be made in this structure, and should reuse eac
 
 ### Running
 
+**Update**: A version of this project adapted to React JS was added. Check the last section of running with package manager (npm) to run that.
+
 To test the application there are three ways:
 
 #### Via Apetize's Emulator
@@ -63,13 +65,23 @@ To test the application there are three ways:
 npm install
 ```
 
-*Then*
+*Then, to run expo and test react native version:*
 
 ```
 npm start
 ```
 
-*Then a expo application will open in your browser. When it runs it will shows to you an QR code, you need to switch to tunnel option then access expo app on your cellphone and search for scan qr code option.* **ATTENTION**: For some iPhones you should scan the Qr code using the default scanner of the OS, then it will ask you if you wish to run with expo.*
+*An expo application will open in your browser. When it runs it will shows to you an QR code, you need to switch to tunnel option then access expo app on your cellphone and search for scan qr code option.* **ATTENTION**: For some iPhones you should scan the Qr code using the default scanner of the OS, then it will ask you if you wish to run with expo.*
+
+**However**, *if you whant to test Web Version using React JS, instead of running "npm start" just run the command*:
+
+```
+npm run start-web
+```
+
+*Your browser will open pointing to localhost:3000 and you will be able to use Web Version*.
+
+**Attention**: This version adapts two components from React Native to React JS (web), that were not working very well in web version. React JS works fine with components of React Native, so it wasn't necessary, for a small project like this, to create a Native and Web view of each component. But in day by day, the practice of separate these views for all components should be better, preventing unexpected version problems. The main point is that the architecture prof itself good to do changes like this!
 
 #### Tests
 
