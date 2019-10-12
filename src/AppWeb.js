@@ -1,7 +1,7 @@
 import React from 'react';
 import { DARK_GREY } from '~/src/constants/colors';
-import { BackgroundWebView } from '~/src/components/Background';
-import { RadiosListWebView } from '~/src/modules/RadiosList';
+import BackgroundWebView from '~/src/components/Background/ViewWeb';
+import RadiosListWebView from '~/src/modules/RadiosList/ViewWeb';
 
 const AppWeb = () => {
     return (

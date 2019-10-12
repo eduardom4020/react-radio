@@ -23,6 +23,7 @@ const RadioListViewDefault = props => {
             <RadioToolbar 
                 color={MEDIUM_ORANGE}
                 title={APP_TITLE}
+                style={{paddingTop: 24}}
             />
             <StyledList
                 ref={ref}
